@@ -1,24 +1,17 @@
-import kotlin.random.Random
+import java.io.File
 
 fun main(args: Array<String>) {
     val game = FizzBuzzGame()
 
-    // read map
-    val rules = readRules()
+    game.addRules(readRules())
 
-    // add behaviours to the game
-    game.addRules(rules)
-
-    // run game
-    game.play(List(10) {Random.nextInt()})
+    game.play((1..11).toList())
 }
 
 fun readRules(): List<FizzBuzzRule> {
-    // read file
+    val lines = File("src/main/resources/rules.txt").readLines()
 
-    // build map
-    val rules = mapOf(3 to "fizz")
-
-    // return list of rules
-    return rules.entries.map { FizzBuzzRule(it.key, it.value) }
+    return lines
+        .associate { it.split(",").first().toInt() to it.split(",").last() }.entries
+        .map { FizzBuzzRule({x -> (x%(it.key)) == 0}, it.value) }
 }

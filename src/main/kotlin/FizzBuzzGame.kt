@@ -1,8 +1,14 @@
-import behaviours.FizzBuzzBehaviour
+class FizzBuzzGame(private val rules: MutableList<FizzBuzzRule> = mutableListOf()) {
 
-class FizzBuzzGame(private val fizzBuzzBehaviour: FizzBuzzBehaviour) {
+    fun play(inputNumbers: List<Int>) {
+        inputNumbers.forEach { inputNumber ->
+            this.rules
+                .firstOrNull { it.apply(inputNumber) }
+                .also { println(it?.output ?: inputNumber) }
+        }
+    }
 
-    fun play(inputNumbers: List<Int>): String {
-        return fizzBuzzBehaviour.apply(inputNumbers)
+    fun addRules(rules: List<FizzBuzzRule>) {
+        this.rules.addAll(rules)
     }
 }
