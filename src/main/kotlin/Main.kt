@@ -1,17 +1,15 @@
-import java.io.File
+import core.FizzBuzzGame
+import core.RulesFileReader
+import io.ConsolePrinter
+import utils.toIntArray
 
 fun main(args: Array<String>) {
+    val printer = ConsolePrinter()
+    val rulesFileReader = RulesFileReader("src/main/resources/rules.txt")
     val game = FizzBuzzGame()
 
-    game.addRules(readRules())
+    game.addRules(rulesFileReader.readRules())
+    val result = game.play(*(1..55).toIntArray())
 
-    game.play((1..11).toList())
-}
-
-fun readRules(): List<FizzBuzzRule> {
-    val lines = File("src/main/resources/rules.txt").readLines()
-
-    return lines
-        .associate { it.split(",").first().toInt() to it.split(",").last() }.entries
-        .map { FizzBuzzRule({x -> (x%(it.key)) == 0}, it.value) }
+    printer.print(result)
 }

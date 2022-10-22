@@ -5,10 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="416258fe-e60e-4c8a-ad02-d2825448f5ac" name="Changes" comment="first commit">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/core/FizzBuzzGame.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/core/FizzBuzzRule.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/core/Printer.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/core/RuleValidator.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/core/RulesFileReader.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/exception/RuleFormatException.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/io/ConsolePrinter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/utils/Extensions.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/core/FizzBuzzGameTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/core/FizzBuzzRuleTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/core/RuleValidatorTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/io/ConsolePrinterTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/rules.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/FizzBuzz.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/FizzBuzz.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/FizzBuzzTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/FizzBuzzTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/FizzBuzzGame.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/FizzBuzzRule.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/rules.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/rules.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/FizzBuzzTest.kt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,9 +37,21 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Kotlin Interface" />
+        <option value="JUnit5 Test Class" />
         <option value="Kotlin Class" />
       </list>
     </option>
@@ -47,11 +76,40 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;TF_FMT&quot;: &quot;false&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/giovanni/Documents/Coding Dojo/fizzBuzz/src/test/resources&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.FizzBuzzTest">
-    <configuration name="FizzBuzzTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/kotlin/core" />
+      <recent name="$PROJECT_DIR$/src/main/kotlin/com/tw" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="core" />
+      <recent name="io" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="io" />
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Kotlin.MainKt">
+    <configuration name="FizzBuzzGameTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -64,7 +122,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;FizzBuzzTest&quot;" />
+            <option value="&quot;core.FizzBuzzGameTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -74,7 +132,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="FizzBuzzTest.should return fizzBuzz when fizzBuzz number 30" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="FizzBuzzRuleTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -87,7 +145,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;FizzBuzzTest.should return fizzBuzz when fizzBuzz number 30&quot;" />
+            <option value="&quot;core.FizzBuzzRuleTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -97,7 +155,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="FizzBuzzTest.should return input string when fizzBuzz number 1" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="RuleValidatorTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -110,7 +168,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;FizzBuzzTest.should return input string when fizzBuzz number 1&quot;" />
+            <option value="&quot;core.RuleValidatorTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -119,12 +177,42 @@
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
+    </configuration>
+    <configuration name="Tests in 'fizzBuzz.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MainKt" />
+      <module name="fizzBuzz.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.FizzBuzzTest" />
-        <item itemvalue="Gradle.FizzBuzzTest.should return fizzBuzz when fizzBuzz number 30" />
-        <item itemvalue="Gradle.FizzBuzzTest.should return input string when fizzBuzz number 1" />
+        <item itemvalue="Kotlin.MainKt" />
+        <item itemvalue="Gradle.Tests in 'fizzBuzz.test'" />
+        <item itemvalue="Gradle.RuleValidatorTest" />
+        <item itemvalue="Gradle.FizzBuzzGameTest" />
+        <item itemvalue="Gradle.FizzBuzzRuleTest" />
       </list>
     </recent_temporary>
   </component>
@@ -141,6 +229,12 @@
       <workItem from="1662657344236" duration="696000" />
       <workItem from="1662990811100" duration="2543000" />
       <workItem from="1663400494115" duration="1009000" />
+      <workItem from="1665248627415" duration="6811000" />
+      <workItem from="1665306604856" duration="4285000" />
+      <workItem from="1665912642248" duration="6737000" />
+      <workItem from="1666015086406" duration="1888000" />
+      <workItem from="1666284783904" duration="4062000" />
+      <workItem from="1666426554463" duration="2509000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1662658859141</created>
